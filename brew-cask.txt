@@ -1,6 +1,6 @@
 git-credential-manager
 sublime-text
-wezterm-nightly
+wezterm
 docker
 postman
 obsidian

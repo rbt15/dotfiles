@@ -19,6 +19,11 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugi
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 ```
+### Clone this repo
+
+```bash
+git clone https://github.com/rbt15/dotfiles
+```
 
 ### Brew setup
 
@@ -26,6 +31,10 @@ Install brew
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+echo "export PATH=/opt/homebrew/bin:$PATH" >> ~/.zshrc
+
+source ~/.zshrc
 ```
 
 Install tap
@@ -37,7 +46,26 @@ brew tap oven-sh/bun
 Install brew packages
 
 ```bash
-xargs brew install < brew.txt
+xargs brew install < dotfiles/brew.txt
 
-xargs brew install --cask < brew-cask.txt
+xargs brew install --cask < dotfiles/brew-cask.txt
 ```
+
+### Copy configs
+
+```bash
+cp dotfiles/.zshrc ~/
+
+cp dotfiles/.gitconfig ~/
+
+cp -R dotfiles/NvChad ~/.config/
+
+cp -R dotfiles/wezterm ~/.config/
+```
+
+### TODO
+
+- [ ] Add instructions for nvim
+- [ ] Simplify brew install
+- [ ] Convert all configs to symlinks
+- [ ] Create a script to automate the process
