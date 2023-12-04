@@ -49,6 +49,7 @@ alias grebase="git rebase -i \$(git log --pretty=oneline | fzf +m | awk '{print 
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="/Users/kirac.apaydin/Library/Python/3.9/bin:$PATH"
+export PATH=/opt/homebrew/bin:$PATH
 
 alias ls="lsd"
 alias tree="lsd --tree"
