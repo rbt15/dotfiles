@@ -1,0 +1,17 @@
+git-credential-manager
+sublime-text
+wezterm-nightly
+docker
+postman
+obsidian
+intellij-idea
+google-chrome
+slack
+zed
+fork
+visual-studio-code
+datagrip
+raycast
+linearmouse
+alt-tab
+hiddenbar
