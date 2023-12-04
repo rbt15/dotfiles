@@ -54,18 +54,19 @@ xargs brew install --cask < dotfiles/brew-cask.txt
 ### Copy configs
 
 ```bash
-cp dotfiles/.zshrc ~/
+cp dotfiles/config/.zshrc ~/
 
-cp dotfiles/.gitconfig ~/
+# cp dotfiles/.gitconfig ~/
 
-cp -R dotfiles/NvChad ~/.config/
+cp -R dotfiles/config/NvChad ~/.config/
 
-cp -R dotfiles/wezterm ~/.config/
+cp -R dotfiles/config/wezterm ~/.config/
 ```
 
 ### TODO
 
 - [ ] Add instructions for nvim
+- [ ] Add gitconfig
 - [ ] Simplify brew install
 - [ ] Convert all configs to symlinks
 - [ ] Create a script to automate the process
