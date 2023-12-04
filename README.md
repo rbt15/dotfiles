@@ -1,5 +1,11 @@
 ### OMZ setup
 
+First intall xcocde command line tools
+
+```bash
+xcode-select --install
+```
+
 Install oh-my-zsh
 
 ```bash
@@ -20,6 +26,12 @@ Install brew
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Install tap
+
+```bash
+brew tap oven-sh/bun
 ```
 
 Install brew packages

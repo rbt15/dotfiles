@@ -16,3 +16,4 @@ yt-dlp
 fd
 awscli
 bob
+bun
