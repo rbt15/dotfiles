@@ -17,3 +17,4 @@ fd
 awscli
 bob
 bun
+font-jetbrains-mono-nerd-font

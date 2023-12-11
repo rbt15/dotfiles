@@ -37,10 +37,11 @@ echo "export PATH=/opt/homebrew/bin:$PATH" >> ~/.zshrc
 source ~/.zshrc
 ```
 
-Install tap
+Install taps
 
 ```bash
 brew tap oven-sh/bun
+brew tap homebrew/cask-fonts
 ```
 
 Install brew packages
