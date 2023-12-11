@@ -15,3 +15,4 @@ raycast
 linearmouse
 alt-tab
 hiddenbar
+alacritty

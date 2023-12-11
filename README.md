@@ -58,9 +58,7 @@ cp dotfiles/config/.zshrc ~/
 
 # cp dotfiles/.gitconfig ~/
 
-cp -R dotfiles/config/NvChad ~/.config/
-
-cp -R dotfiles/config/wezterm ~/.config/
+cp -r dotfiles/config/{NvChad,wezterm,alacritty,linearmouse} ~/.config/
 ```
 
 ### TODO
