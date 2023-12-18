@@ -18,3 +18,5 @@ awscli
 bob
 bun
 font-jetbrains-mono-nerd-font
+stern
+gradle

@@ -54,3 +54,10 @@ export PATH=/opt/homebrew/bin:$PATH
 alias ls="lsd"
 alias tree="lsd --tree"
 alias aws-login="~/aws-login.sh"
+
+klog() {
+  service_name=$1
+  environment_name=$2
+  since_time=$3
+  stern --template='{{ colorCyan .PodName}} {{with $d := .Message | tryParseJSON }} [{{ colorGreen (toTimestamp $d.timeMillis "2006-01-02 15:04:05" "Local") }}] [{{ levelColor $d.level }}] {{$d.message}}{{ else }} {{ .Message }}{{end}}{{"\n"}}' $service_name --since $since_time -c ^java\$ -n $environment_name
+}
